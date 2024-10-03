@@ -1,0 +1,123 @@
+Exercicio 1
+n1 = int(input("Digite um numero"))
+
+if n1 % 2 == 0:
+    print("O numero digita é par")
+else:
+    print("O numero digitado é impar")
+
+Exercicio 2
+n1 = int(input("Digite um numero"))
+n2 = int(input("Digite outro numero"))
+
+if n1 > n2:
+    print("\nO primeiro numero é o maior")
+else:
+    print("\nO segundo numero é o maior")
+
+Exercicio 3
+n1 = int(input("Digite um numero"))
+
+if n1 < 0:
+    print("\nO numero é negativo")
+elif n1 > 0:
+    print("\nO numero é positivo")
+else:
+    print("\nO numero digitado é 0")
+
+Exercicio 4
+idade = int(input("Digite sua idade"))
+
+if idade < 18:
+    print("\nMenor de idade")
+elif 18 <= idade < 65:
+    print("\nAdulto") 
+else:
+    print("\nidoso")
+
+Exercicio 5
+nota = int(input("Digite a sua nota"))
+
+if nota >=60 :
+    print("Você está aprovado")
+else:
+    print("Você está reprovado")
+
+Exercicio 6
+n1 = int(input("Digite um numero"))
+n2 = int(input("Digite outro numero"))
+operações =(input("Digite a operacão desejada"))
+
+if operações == '+':
+    resultado = n1 + n2
+    print(f"\nO resultado de {n1} + {n2} é: {resultado}")
+elif operações == '-':
+    resultado = n1 - n2
+    print(f"\nO resultado de {n1} - {n2} é: {resultado}")
+elif operações == '*':
+    resultado = n1 * n2
+    print(f"\nO resultado de {n1} + {n2} é: {resultado}")
+elif operações == '/':
+    resultado = n1 / n2
+    print(f"\nO resultado de {n1} + {n2} é: {resultado}")
+else:
+    print("Operação invalida")
+
+Exercicio 7
+lado1 = (input("Digite o primeiro lado do triangulo"))
+lado2 = (input("Digite o primeiro lado do triangulo"))
+lado3 = (input("Digite o primeiro lado do triangulo"))
+
+if lado1 == lado2 == lado3:
+        print("O triângulo é equilátero.")
+elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
+        print("O triângulo é isósceles.")
+else:
+        print("O triângulo é escaleno.")
+
+Exercicio 8
+peso = int(input("Digite seu peso"))
+Altura = float(input("Digite sua altura em metros"))
+
+IMC = peso / (Altura ** 2)
+
+if IMC < 16.9:
+    print("Muito Abaixo do peso")
+elif IMC >=17 == 18.4:
+    print("Abaixo do peso")
+elif IMC >=18.5 == 24.9:
+    print("peso normal")
+elif IMC >=25 == 29.9:
+    print("Acima do peso")
+elif IMC >=30 == 34.9:
+    print("Obsidade grau I")
+elif IMC >=35 == 40:
+    print("Obsidade grau II")
+elif IMC >40:
+    print("Obsidade grau III")
+else:
+    print("Algo deu errado tente novamente")
+
+Exercicio 9
+ano =int(input("Digite algum ano"))
+
+if ano % 4 == 0:
+    print("Ano Bissexto")
+else:
+    print("O ano digitado não é Bissexto")
+
+Exercicio 10(Desafio)
+import random
+
+numero_secreto = random.randrange(1, 100)
+tentativas = 0
+
+while True:
+    tentativas += 1
+    valor = int(input("Qual o seu palpite? "))
+    if valor < numero_secreto:
+        print("Muito baixo")
+    elif valor > numero_secreto:
+        print("Muito alto")
+    else:
+        break
